@@ -9,7 +9,7 @@ $fp = fsockopen($vpn_host, $vpn_port, $errno, $errstr, 30);
 if (!$fp) {
     echo "$errstr ($errno)<br />\n";
     exit;
-}
+} 
 
 fwrite($fp, "status\n\n\n");
 sleep(1);
